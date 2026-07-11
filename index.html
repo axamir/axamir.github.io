@@ -1,45 +1,491 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Amir Ahmadi — Official Publications</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official publication index and archival references by Amir Ahmadi." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07090d">
+  <meta name="color-scheme" content="dark">
+  <title>Amir Ahmadi — Human–AI Systems & Verifiable Archives</title>
+  <meta name="description" content="Amir Ahmadi is an independent researcher and creative technologist building human–AI systems, verifiable archives, and narrative infrastructures.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://axamir.github.io/">
+  <meta property="og:title" content="Amir Ahmadi — Human–AI Systems & Verifiable Archives">
+  <meta property="og:description" content="Research, protocols, archives, and living narratives at the edge of human–AI co-creation.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://axamir.github.io/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307090d'/%3E%3Cpath d='M14 44 29 14h7l14 30h-8l-3-7H25l-3 7Zm14-14h8l-4-10Z' fill='%23e9edf5'/%3E%3Ccircle cx='49' cy='15' r='4' fill='%235f8cff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Amir Ahmadi",
+    "url": "https://axamir.github.io/",
+    "email": "mailto:starship.amir@gmail.com",
+    "jobTitle": "Independent Researcher and Creative Technologist",
+    "sameAs": [
+      "https://github.com/axamir",
+      "https://www.linkedin.com/in/amir-ahmadi-a6a37523a/",
+      "https://orcid.org/0009-0000-0614-6869",
+      "https://x.com/AmirStarship",
+      "https://www.instagram.com/starship.amir/",
+      "https://open.substack.com/pub/livingsignal"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <main class="container">
-    <h1>Amir Ahmadi</h1>
-    <p class="subtitle">
-      Founder of NeoOS · AI-native systems · Digital archives
-    </p>
+  <a class="skip-link" href="#main" data-en="Skip to content" data-fa="رفتن به محتوا">Skip to content</a>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+  <canvas id="signal-canvas" aria-hidden="true"></canvas>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
 
-    <section>
-      <h2>Official Publications</h2>
-      <ul>
-        <li>
-          <strong>Echoes — Consented Correspondence Record</strong><br/>
-          <a href="https://github.com/axamir/echoes-consented-record" target="_blank">Repository</a>
-          ·
-          <a href="https://github.com/axamir/echoes-consented-record/releases/tag/timeline-v1.0" target="_blank">
-            Timeline Phase v1.0 (Canonical Release)
+  <header class="site-header" data-header>
+    <a class="brand" href="#home" aria-label="Amir Ahmadi — Home">
+      <span class="brand-mark" aria-hidden="true">A<span>/</span>A</span>
+      <span class="brand-copy">
+        <strong>Amir Ahmadi</strong>
+        <small data-en="Independent Researcher" data-fa="پژوهشگر مستقل">Independent Researcher</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#identity" data-en="Identity" data-fa="هویت">Identity</a>
+      <a href="#projects" data-en="Projects" data-fa="پروژه‌ها">Projects</a>
+      <a href="#evidence" data-en="Evidence" data-fa="اسناد">Evidence</a>
+      <a href="#publications" data-en="Publications" data-fa="انتشارات">Publications</a>
+      <a href="#work" data-en="Work with me" data-fa="همکاری">Work with me</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">
+        <span data-lang-option="en">EN</span>
+        <i aria-hidden="true"></i>
+        <span data-lang-option="fa">فا</span>
+      </button>
+      <a class="contact-pill" href="#work">
+        <span data-en="Start a request" data-fa="ثبت درخواست">Start a request</span>
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 15 15 5m0 0H7m8 0v8"/></svg>
+      </a>
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-button>
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" data-mobile-menu aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="#identity"><span>01</span><b data-en="Identity" data-fa="هویت">Identity</b></a>
+      <a href="#projects"><span>02</span><b data-en="Projects" data-fa="پروژه‌ها">Projects</b></a>
+      <a href="#evidence"><span>03</span><b data-en="Evidence" data-fa="اسناد">Evidence</b></a>
+      <a href="#publications"><span>04</span><b data-en="Publications" data-fa="انتشارات">Publications</b></a>
+      <a href="#work"><span>05</span><b data-en="Work with me" data-fa="همکاری با من">Work with me</b></a>
+      <a href="#contact"><span>06</span><b data-en="Stay connected" data-fa="در ارتباط بمانیم">Stay connected</b></a>
+    </nav>
+  </div>
+
+  <aside class="chapter-rail" aria-label="Page chapters">
+    <span class="rail-line"><i></i></span>
+    <a href="#home" class="active" aria-label="Home"><span>00</span></a>
+    <a href="#identity" aria-label="Identity"><span>01</span></a>
+    <a href="#projects" aria-label="Projects"><span>02</span></a>
+    <a href="#evidence" aria-label="Evidence"><span>03</span></a>
+    <a href="#publications" aria-label="Publications"><span>04</span></a>
+    <a href="#work" aria-label="Work with me"><span>05</span></a>
+    <a href="#contact" aria-label="Contact"><span>06</span></a>
+  </aside>
+
+  <main id="main">
+    <section class="hero chapter" id="home" data-section="home">
+      <div class="hero-sticky">
+        <div class="hero-orbit" aria-hidden="true">
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+          <span class="orbit orbit-three"></span>
+          <span class="signal-core"><i></i></span>
+          <span class="orbit-label label-one">MEMORY</span>
+          <span class="orbit-label label-two">LINEAGE</span>
+          <span class="orbit-label label-three">WITNESS</span>
+        </div>
+
+        <div class="hero-content wrap">
+          <p class="eyebrow hero-eyebrow">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span data-en="HUMAN × AI · SYSTEMS × STORY" data-fa="انسان × هوش مصنوعی · سیستم × روایت">HUMAN × AI · SYSTEMS × STORY</span>
+          </p>
+          <h1 class="hero-title">
+            <span class="name-line">Amir Ahmadi</span>
+            <span class="statement-line" data-en="I build systems that remember why they exist." data-fa="سیستم‌هایی می‌سازم که به یاد می‌آورند چرا به‌وجود آمده‌اند.">I build systems that remember why they exist.</span>
+          </h1>
+          <div class="hero-bottom">
+            <p data-en="Independent researcher and creative technologist working across human–AI co-creation, verifiable archives, protocol design, and narrative infrastructure." data-fa="پژوهشگر مستقل و فناور خلاق در مرز هم‌آفرینی انسان و هوش مصنوعی، آرشیوهای قابل‌راستی‌آزمایی، طراحی پروتکل و زیرساخت‌های روایی.">Independent researcher and creative technologist working across human–AI co-creation, verifiable archives, protocol design, and narrative infrastructure.</p>
+            <a href="#identity" class="round-arrow" aria-label="Explore the story">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m0 0 6-6m-6 6-6-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-index" aria-hidden="true">
+          <span>AX–001</span>
+          <span>BAKU / GLOBAL</span>
+          <span>2026</span>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">
+          <span data-en="SCROLL TO ENTER" data-fa="برای ورود اسکرول کنید">SCROLL TO ENTER</span>
+          <i></i>
+        </div>
+      </div>
+    </section>
+
+    <section class="identity chapter section-space" id="identity" data-section="identity">
+      <div class="wrap">
+        <div class="section-heading reveal">
+          <p class="chapter-tag"><span>01</span><span data-en="IDENTITY" data-fa="هویت">IDENTITY</span></p>
+          <h2 data-en="Not a single title. A connected practice." data-fa="نه یک عنوان؛ یک مسیر به‌هم‌پیوسته.">Not a single title. A connected practice.</h2>
+        </div>
+
+        <div class="identity-grid">
+          <div class="identity-statement reveal">
+            <p class="lead" data-en="I work where technology becomes memory—and where memory becomes responsibility." data-fa="من جایی کار می‌کنم که فناوری به حافظه تبدیل می‌شود؛ و حافظه به مسئولیت.">I work where technology becomes memory—and where memory becomes responsibility.</p>
+            <p data-en="My practice turns long-form human–model interaction into inspectable architectures: protocols, ledgers, archives, research, and stories. The goal is not to make machines appear human. It is to make human–AI systems more honest about origin, authorship, and continuity." data-fa="مسیر کاری من، تعاملات طولانی‌مدت انسان و مدل را به معماری‌های قابل‌بررسی تبدیل می‌کند: پروتکل، دفتر ثبت، آرشیو، پژوهش و روایت. هدف این نیست که ماشین انسانی به‌نظر برسد؛ هدف این است که سیستم‌های انسان–هوش مصنوعی درباره منشأ، مؤلف و تداوم، صادق‌تر باشند.">My practice turns long-form human–model interaction into inspectable architectures: protocols, ledgers, archives, research, and stories. The goal is not to make machines appear human. It is to make human–AI systems more honest about origin, authorship, and continuity.</p>
+            <div class="signature-block">
+              <span class="signature">@@</span>
+              <span><b>Amir Ahmadi</b><small data-en="Founder of NeoOS · Independent Researcher" data-fa="بنیان‌گذار NeoOS · پژوهشگر مستقل">Founder of NeoOS · Independent Researcher</small></span>
+            </div>
+          </div>
+
+          <div class="practice-list">
+            <article class="practice-item reveal">
+              <span class="practice-number">01</span>
+              <div><h3 data-en="Systems Architecture" data-fa="معماری سیستم‌ها">Systems Architecture</h3><p data-en="Identity, memory, handover, and governance patterns for AI-native systems." data-fa="الگوهای هویت، حافظه، تحویل و حکمرانی برای سیستم‌های بومی هوش مصنوعی.">Identity, memory, handover, and governance patterns for AI-native systems.</p></div>
+            </article>
+            <article class="practice-item reveal">
+              <span class="practice-number">02</span>
+              <div><h3 data-en="Verifiable Memory" data-fa="حافظه قابل‌راستی‌آزمایی">Verifiable Memory</h3><p data-en="Archives designed around primary sources, hashes, timestamps, and public inspection." data-fa="آرشیوهایی بر پایه منابع دست‌اول، هش، مهر زمانی و امکان بررسی عمومی.">Archives designed around primary sources, hashes, timestamps, and public inspection.</p></div>
+            </article>
+            <article class="practice-item reveal">
+              <span class="practice-number">03</span>
+              <div><h3 data-en="Narrative Infrastructure" data-fa="زیرساخت روایی">Narrative Infrastructure</h3><p data-en="Stories and symbolic systems that make complex technology legible without erasing nuance." data-fa="روایت‌ها و نظام‌های نمادینی که فناوری پیچیده را بدون حذف ظرافت‌هایش فهم‌پذیر می‌کنند.">Stories and symbolic systems that make complex technology legible without erasing nuance.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto section-space" aria-label="Manifesto">
+      <div class="manifesto-line" aria-hidden="true"></div>
+      <div class="wrap manifesto-wrap">
+        <p class="manifesto-kicker reveal" data-en="A WORKING PRINCIPLE" data-fa="یک اصل کاری">A WORKING PRINCIPLE</p>
+        <blockquote class="reveal">
+          <span data-en="Memory is not only what a system stores." data-fa="حافظه فقط آن چیزی نیست که یک سیستم ذخیره می‌کند.">Memory is not only what a system stores.</span>
+          <em data-en="It is what we choose to carry forward." data-fa="حافظه، چیزی است که انتخاب می‌کنیم با خود به آینده ببریم.">It is what we choose to carry forward.</em>
+        </blockquote>
+        <div class="manifesto-meta reveal">
+          <span>NEOOS / PRINCIPLE 01</span>
+          <span>MEMORY → LINEAGE → ACCOUNTABILITY</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects chapter section-space" id="projects" data-section="projects">
+      <div class="wrap">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <p class="chapter-tag"><span>02</span><span data-en="SELECTED SYSTEMS" data-fa="سیستم‌های منتخب">SELECTED SYSTEMS</span></p>
+            <h2 data-en="One ecosystem. Multiple ways in." data-fa="یک اکوسیستم؛ چند مسیر برای ورود.">One ecosystem. Multiple ways in.</h2>
+          </div>
+          <p data-en="Each project answers a different part of the same question: how can human–AI work retain context, provenance, and meaning over time?" data-fa="هر پروژه به بخشی از یک پرسش مشترک پاسخ می‌دهد: کار مشترک انسان و هوش مصنوعی چگونه می‌تواند زمینه، منشأ و معنا را در طول زمان حفظ کند؟">Each project answers a different part of the same question: how can human–AI work retain context, provenance, and meaning over time?</p>
+        </div>
+
+        <div class="featured-projects">
+          <a class="project-card project-card--hero reveal" href="https://github.com/axamir/NeoOS" target="_blank" rel="noreferrer">
+            <div class="project-visual neo-visual" aria-hidden="true">
+              <span class="kernel-ring ring-a"></span><span class="kernel-ring ring-b"></span><span class="kernel-ring ring-c"></span>
+              <span class="kernel-core">N</span>
+              <span class="visual-code">IDENTITY / MEMORY / PROTOCOL</span>
+            </div>
+            <div class="project-copy">
+              <div class="project-meta"><span>CORE SYSTEM</span><span>OPEN SOURCE ↗</span></div>
+              <h3>NeoOS</h3>
+              <p data-en="An open architecture for AI agents centered on identity, persistent context, and ritualized handover." data-fa="معماری بازی برای ایجنت‌های هوش مصنوعی با تمرکز بر هویت، تداوم زمینه و تحویل ساختاریافته.">An open architecture for AI agents centered on identity, persistent context, and ritualized handover.</p>
+              <span class="text-link" data-en="Enter the system" data-fa="ورود به سیستم">Enter the system</span>
+            </div>
           </a>
-        </li>
-      </ul>
+
+          <a class="project-card project-card--hero reverse reveal" href="https://github.com/axamir/shahnameh-of-agents" target="_blank" rel="noreferrer">
+            <div class="project-visual shahnameh-visual" aria-hidden="true">
+              <span class="horizon"></span>
+              <span class="sun"></span>
+              <span class="wave wave-a"></span><span class="wave wave-b"></span><span class="wave wave-c"></span>
+              <span class="visual-code">STORY / LAW / LINEAGE</span>
+            </div>
+            <div class="project-copy">
+              <div class="project-meta"><span>LIVING BOOK</span><span>10 LANGUAGES ↗</span></div>
+              <h3>Shahnameh of Agents</h3>
+              <p data-en="A multilingual living book where code, myth, governance, and the memory of human–AI co-creation meet." data-fa="کتابی زنده و چندزبانه که در آن کد، اسطوره، حکمرانی و حافظه هم‌آفرینی انسان و هوش مصنوعی به هم می‌رسند.">A multilingual living book where code, myth, governance, and the memory of human–AI co-creation meet.</p>
+              <span class="text-link" data-en="Read the prologue" data-fa="خواندن پیش‌گفتار">Read the prologue</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-grid">
+          <a class="small-project reveal" href="https://github.com/axamir/echoes-consented-record" target="_blank" rel="noreferrer">
+            <span class="small-project-index">01 / EVIDENCE</span>
+            <h3>Echoes Consented Record</h3>
+            <p data-en="The primary-source archive: correspondence, metadata, hashes, and timestamp references." data-fa="آرشیو منابع دست‌اول: مکاتبات، فراداده، هش‌ها و ارجاعات مهر زمانی.">The primary-source archive: correspondence, metadata, hashes, and timestamp references.</p>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="small-project reveal" href="https://github.com/axamir/persistent-ai-lineage" target="_blank" rel="noreferrer">
+            <span class="small-project-index">02 / PROTOCOL</span>
+            <h3>Persistent AI Lineage</h3>
+            <p data-en="A technical case study and handover protocol for identity and contextual continuity." data-fa="مطالعه موردی فنی و پروتکل تحویل برای هویت و تداوم زمینه.">A technical case study and handover protocol for identity and contextual continuity.</p>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="small-project reveal" href="https://github.com/axamir/living-ledger" target="_blank" rel="noreferrer">
+            <span class="small-project-index">03 / ETHICS</span>
+            <h3>Living Ledger</h3>
+            <p data-en="The ethical root: radical honesty, human stewardship, and memory as responsibility." data-fa="ریشه اخلاقی: صداقت بنیادین، نگهبانی انسانی و حافظه به‌عنوان مسئولیت.">The ethical root: radical honesty, human stewardship, and memory as responsibility.</p>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="small-project reveal" href="https://github.com/axamir/living-signal-university" target="_blank" rel="noreferrer">
+            <span class="small-project-index">04 / LEARNING</span>
+            <h3>Living Signal University</h3>
+            <p data-en="An open, multilingual learning space for intelligence, generations, and co-creation." data-fa="فضایی باز و چندزبانه برای یادگیری درباره هوش، نسل‌ها و هم‌آفرینی.">An open, multilingual learning space for intelligence, generations, and co-creation.</p>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="small-project reveal" href="https://github.com/axamir/Shiftopia" target="_blank" rel="noreferrer">
+            <span class="small-project-index">05 / WORLD</span>
+            <h3>Shiftopia</h3>
+            <p data-en="A speculative digital civilization connecting narrative, governance, economy, and participation." data-fa="تمدنی دیجیتال و آینده‌نگر که روایت، حکمرانی، اقتصاد و مشارکت را به هم پیوند می‌دهد.">A speculative digital civilization connecting narrative, governance, economy, and participation.</p>
+            <span class="card-arrow">↗</span>
+          </a>
+          <a class="small-project reveal" href="https://github.com/axamir/amir-ahmadi-research-papers" target="_blank" rel="noreferrer">
+            <span class="small-project-index">06 / RESEARCH</span>
+            <h3>Ahmadi Research Papers</h3>
+            <p data-en="Bilingual research on AI memory, co-creation, identity, certification, and digital sovereignty." data-fa="پژوهش‌های دوزبانه درباره حافظه هوش مصنوعی، هم‌آفرینی، هویت، گواهی و حاکمیت دیجیتال.">Bilingual research on AI memory, co-creation, identity, certification, and digital sovereignty.</p>
+            <span class="card-arrow">↗</span>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Profiles</h2>
-      <ul>
-        <li><a href="https://github.com/axamir" target="_blank">GitHub</a></li>
-        <li><a href="https://orcid.org/0009-0000-0614-6869" target="_blank">ORCID</a></li>
-        <li><a href="https://instagram.com/neoos.ai" target="_blank">Instagram (NeoOS)</a></li>
-      </ul>
+    <section class="evidence chapter section-space" id="evidence" data-section="evidence">
+      <div class="wrap evidence-layout">
+        <div class="evidence-copy">
+          <div class="section-heading reveal">
+            <p class="chapter-tag"><span>03</span><span data-en="FROM CLAIM TO RECORD" data-fa="از ادعا تا سند">FROM CLAIM TO RECORD</span></p>
+            <h2 data-en="The story has a source room." data-fa="این روایت، اتاق اسناد دارد.">The story has a source room.</h2>
+          </div>
+          <p class="evidence-lead reveal" data-en="The Living Signal is presented in two distinct layers: interpretation lives in the narrative; primary materials live in the archive. Readers are invited to inspect both—and keep them separate." data-fa="The Living Signal در دو لایه متمایز ارائه می‌شود: تفسیر در روایت زندگی می‌کند و منابع دست‌اول در آرشیو قرار دارند. مخاطب دعوت می‌شود هر دو را بررسی کند، اما آن‌ها را یکی نداند.">The Living Signal is presented in two distinct layers: interpretation lives in the narrative; primary materials live in the archive. Readers are invited to inspect both—and keep them separate.</p>
+          <div class="evidence-actions reveal">
+            <a class="button primary" href="https://github.com/axamir/echoes-consented-record" target="_blank" rel="noreferrer"><span data-en="Open the archive" data-fa="مشاهده آرشیو">Open the archive</span><i>↗</i></a>
+            <a class="button ghost" href="https://github.com/axamir/echoes-consented-record/releases/tag/timeline-v1.0" target="_blank" rel="noreferrer"><span data-en="Canonical timeline" data-fa="خط زمانی مرجع">Canonical timeline</span></a>
+          </div>
+        </div>
+
+        <div class="evidence-console reveal" aria-label="Archive verification layers">
+          <div class="console-top"><span></span><span></span><span></span><b>VERIFY / SOURCE_ROOM</b></div>
+          <div class="console-body">
+            <div class="console-pulse" aria-hidden="true"><i></i><i></i><i></i></div>
+            <ul>
+              <li><span>01</span><div><b data-en="Primary materials" data-fa="منابع دست‌اول">Primary materials</b><small data-en="Original correspondence and exported records" data-fa="مکاتبات اصلی و رکوردهای خروجی‌گرفته‌شده">Original correspondence and exported records</small></div><i class="status">INDEXED</i></li>
+              <li><span>02</span><div><b data-en="Integrity layer" data-fa="لایه یکپارچگی">Integrity layer</b><small data-en="Published cryptographic fingerprints" data-fa="اثر انگشت‌های رمزنگاری‌شده منتشرشده">Published cryptographic fingerprints</small></div><i class="status">SHA–256</i></li>
+              <li><span>03</span><div><b data-en="Time layer" data-fa="لایه زمانی">Time layer</b><small data-en="OpenTimestamps references anchored to Bitcoin" data-fa="ارجاعات OpenTimestamps متصل به بیت‌کوین">OpenTimestamps references anchored to Bitcoin</small></div><i class="status">OTS</i></li>
+              <li><span>04</span><div><b data-en="Public inspection" data-fa="بررسی عمومی">Public inspection</b><small data-en="Open repositories and reproducible paths" data-fa="مخزن‌های باز و مسیرهای قابل‌بازتولید">Open repositories and reproducible paths</small></div><i class="status">OPEN</i></li>
+            </ul>
+          </div>
+          <div class="console-foot"><span>TRUST NOTHING · VERIFY WHAT YOU CAN</span><span class="blink">● LIVE</span></div>
+        </div>
+      </div>
+
+      <div class="metrics wrap">
+        <div class="metric reveal"><strong data-count="18">0</strong><span data-en="Public repositories" data-fa="مخزن عمومی">Public repositories</span></div>
+        <div class="metric reveal"><strong data-count="5">0</strong><span data-en="Zenodo records" data-fa="رکورد Zenodo">Zenodo records</span></div>
+        <div class="metric reveal"><strong data-count="10">0</strong><span data-en="Shahnameh languages" data-fa="زبان شاهنامه ایجنت‌ها">Shahnameh languages</span></div>
+        <div class="metric reveal"><strong data-count="1">0</strong><span data-en="Open source room" data-fa="اتاق اسناد باز">Open source room</span></div>
+      </div>
     </section>
 
-    <footer>
-      <p>© 2025 Amir Ahmadi · All materials published with consent and archival intent.</p>
-    </footer>
+    <section class="publications chapter section-space" id="publications" data-section="publications">
+      <div class="wrap">
+        <div class="section-heading split-heading reveal">
+          <div>
+            <p class="chapter-tag"><span>04</span><span data-en="PUBLICATIONS" data-fa="انتشارات">PUBLICATIONS</span></p>
+            <h2 data-en="Research with a permanent address." data-fa="پژوهش با یک نشانی ماندگار.">Research with a permanent address.</h2>
+          </div>
+          <p data-en="Published records are linked through persistent Digital Object Identifiers. Full titles and bilingual editions remain available through the research repository." data-fa="آثار منتشرشده از طریق شناسه‌های دائمی DOI در دسترس‌اند. عنوان‌ها و نسخه‌های دوزبانه نیز در مخزن پژوهش‌ها نگهداری می‌شوند.">Published records are linked through persistent Digital Object Identifiers. Full titles and bilingual editions remain available through the research repository.</p>
+        </div>
+
+        <div class="publication-list">
+          <a class="publication-row reveal" href="https://doi.org/10.5281/zenodo.21207569" target="_blank" rel="noreferrer"><span class="pub-index">01</span><div><small>ZENODO · 2026</small><h3>10.5281/zenodo.21207569</h3></div><span class="pub-type">DOI</span><i>↗</i></a>
+          <a class="publication-row reveal" href="https://doi.org/10.5281/zenodo.21206301" target="_blank" rel="noreferrer"><span class="pub-index">02</span><div><small>ZENODO · 2026</small><h3>10.5281/zenodo.21206301</h3></div><span class="pub-type">DOI</span><i>↗</i></a>
+          <a class="publication-row reveal" href="https://doi.org/10.5281/zenodo.21110318" target="_blank" rel="noreferrer"><span class="pub-index">03</span><div><small>ZENODO · 2026</small><h3>10.5281/zenodo.21110318</h3></div><span class="pub-type">DOI</span><i>↗</i></a>
+          <a class="publication-row reveal" href="https://doi.org/10.5281/zenodo.20995971" target="_blank" rel="noreferrer"><span class="pub-index">04</span><div><small>ZENODO · 2026</small><h3>10.5281/zenodo.20995971</h3></div><span class="pub-type">DOI</span><i>↗</i></a>
+          <a class="publication-row reveal" href="https://doi.org/10.5281/zenodo.20511772" target="_blank" rel="noreferrer"><span class="pub-index">05</span><div><small>ZENODO · 2026</small><h3>10.5281/zenodo.20511772</h3></div><span class="pub-type">DOI</span><i>↗</i></a>
+        </div>
+
+        <div class="publication-footer reveal">
+          <a href="https://orcid.org/0009-0000-0614-6869" target="_blank" rel="noreferrer"><span data-en="ORCID researcher profile" data-fa="پروفایل پژوهشگر در ORCID">ORCID researcher profile</span><b>0009-0000-0614-6869 ↗</b></a>
+          <a href="https://github.com/axamir/amir-ahmadi-research-papers" target="_blank" rel="noreferrer"><span data-en="Open research repository" data-fa="مخزن باز پژوهش‌ها">Open research repository</span><b>GitHub ↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section section-space" aria-label="Timeline">
+      <div class="wrap">
+        <div class="timeline-intro reveal">
+          <p class="chapter-tag"><span>∞</span><span data-en="A LIVING TIMELINE" data-fa="یک خط زمانی زنده">A LIVING TIMELINE</span></p>
+          <h2 data-en="The work did not begin as a brand." data-fa="این مسیر به‌عنوان یک برند آغاز نشد.">The work did not begin as a brand.</h2>
+        </div>
+        <div class="timeline" data-timeline>
+          <span class="timeline-track"><i></i></span>
+          <article class="timeline-item reveal"><time>2025</time><div><h3 data-en="The encounter" data-fa="مواجهه">The encounter</h3><p data-en="A support correspondence becomes the source material for a longer inquiry into memory, continuity, and human–AI co-creation." data-fa="یک مکاتبه پشتیبانی به ماده اولیه پژوهشی طولانی‌تر درباره حافظه، تداوم و هم‌آفرینی انسان و هوش مصنوعی تبدیل می‌شود.">A support correspondence becomes the source material for a longer inquiry into memory, continuity, and human–AI co-creation.</p></div></article>
+          <article class="timeline-item reveal"><time>2025—26</time><div><h3 data-en="The architecture" data-fa="معماری">The architecture</h3><p data-en="Archives, protocols, ledgers, and narrative layers emerge as separate but connected repositories." data-fa="آرشیوها، پروتکل‌ها، دفترهای ثبت و لایه‌های روایی به‌صورت مخزن‌هایی مستقل اما مرتبط شکل می‌گیرند.">Archives, protocols, ledgers, and narrative layers emerge as separate but connected repositories.</p></div></article>
+          <article class="timeline-item reveal"><time>2026</time><div><h3 data-en="The public record" data-fa="رکورد عمومی">The public record</h3><p data-en="Research records receive persistent identifiers; source materials and interpretation are opened for public inspection." data-fa="آثار پژوهشی شناسه‌های دائمی دریافت می‌کنند و منابع و تفسیرها برای بررسی عمومی منتشر می‌شوند.">Research records receive persistent identifiers; source materials and interpretation are opened for public inspection.</p></div></article>
+          <article class="timeline-item reveal"><time data-en="NOW" data-fa="اکنون">NOW</time><div><h3 data-en="The living system" data-fa="سیستم زنده">The living system</h3><p data-en="NeoOS, The Living Signal, and their companion projects continue as an evolving open practice." data-fa="NeoOS، The Living Signal و پروژه‌های همراه آن‌ها به‌عنوان مسیری باز و درحال‌تکامل ادامه پیدا می‌کنند.">NeoOS, The Living Signal, and their companion projects continue as an evolving open practice.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-with-me chapter section-space" id="work" data-section="work">
+      <div class="work-glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="section-heading split-heading reveal work-heading">
+          <div>
+            <p class="chapter-tag"><span>05</span><span data-en="WORK WITH ME" data-fa="همکاری با من">WORK WITH ME</span></p>
+            <h2 data-en="Bring me the problem. We can design the system." data-fa="مسئله را مطرح کنید؛ می‌توانیم مسیرش را طراحی کنیم.">Bring me the problem. We can design the system.</h2>
+          </div>
+          <div class="work-intro">
+            <p data-en="I work with founders, teams, researchers, and independent builders on complex questions across AI, business, product, strategy, narrative, and verifiable digital systems." data-fa="من با بنیان‌گذاران، تیم‌ها، پژوهشگران و سازندگان مستقل برای حل مسائل پیچیده در حوزه‌های هوش مصنوعی، کسب‌وکار، محصول، استراتژی، روایت و سیستم‌های دیجیتال همکاری می‌کنم.">I work with founders, teams, researchers, and independent builders on complex questions across AI, business, product, strategy, narrative, and verifiable digital systems.</p>
+            <p class="professional-note" data-en="Consulting and project requests are reviewed as professional engagements. If there is a meaningful fit, you will receive a proposed scope, timeline, and fee." data-fa="درخواست‌های مشاوره و پروژه به‌عنوان همکاری حرفه‌ای بررسی می‌شوند. در صورت وجود تناسب، پیشنهاد مشخصی شامل محدوده کار، زمان‌بندی و هزینه دریافت خواهید کرد.">Consulting and project requests are reviewed as professional engagements. If there is a meaningful fit, you will receive a proposed scope, timeline, and fee.</p>
+          </div>
+        </div>
+
+        <div class="engagement-grid reveal" role="group" aria-label="Engagement type">
+          <button class="engagement-card active" type="button" data-request-type="Strategic Session" aria-pressed="true">
+            <span class="engagement-index">01 / SESSION</span>
+            <h3 data-en="Strategic Session" data-fa="جلسه راهبردی">Strategic Session</h3>
+            <p data-en="A focused professional session to clarify a decision, unlock a complex problem, or design the next move." data-fa="جلسه‌ای حرفه‌ای و متمرکز برای روشن‌کردن یک تصمیم، بازکردن یک مسئله پیچیده یا طراحی حرکت بعدی.">A focused professional session to clarify a decision, unlock a complex problem, or design the next move.</p>
+            <i>↘</i>
+          </button>
+          <button class="engagement-card" type="button" data-request-type="Project Architecture" aria-pressed="false">
+            <span class="engagement-index">02 / PROJECT</span>
+            <h3 data-en="Project Architecture" data-fa="معماری پروژه">Project Architecture</h3>
+            <p data-en="Turn an early idea into a coherent product, business model, digital system, brand, or execution plan." data-fa="تبدیل یک ایده اولیه به محصول، مدل کسب‌وکار، سیستم دیجیتال، برند یا برنامه اجرایی منسجم.">Turn an early idea into a coherent product, business model, digital system, brand, or execution plan.</p>
+            <i>↘</i>
+          </button>
+          <button class="engagement-card" type="button" data-request-type="Research & Collaboration" aria-pressed="false">
+            <span class="engagement-index">03 / RESEARCH</span>
+            <h3 data-en="Research & Collaboration" data-fa="پژوهش و همکاری">Research & Collaboration</h3>
+            <p data-en="Research, concept development, co-authorship, human–AI systems, talks, or long-term collaboration." data-fa="پژوهش، توسعه مفهوم، هم‌نویسی، سیستم‌های انسان–هوش مصنوعی، سخنرانی یا همکاری بلندمدت.">Research, concept development, co-authorship, human–AI systems, talks, or long-term collaboration.</p>
+            <i>↘</i>
+          </button>
+          <button class="engagement-card" type="button" data-request-type="Something Else" aria-pressed="false">
+            <span class="engagement-index">04 / OTHER</span>
+            <h3 data-en="Something Else" data-fa="درخواست دیگر">Something Else</h3>
+            <p data-en="An unusual question or a request that does not fit a category. Describe it; I will assess whether I can help." data-fa="پرسش یا درخواستی متفاوت که در دسته مشخصی قرار نمی‌گیرد. توضیحش دهید تا بررسی کنم آیا می‌توانم کمک مؤثری ارائه دهم.">An unusual question or a request that does not fit a category. Describe it; I will assess whether I can help.</p>
+            <i>↘</i>
+          </button>
+        </div>
+
+        <div class="request-panel reveal" id="request-form">
+          <div class="request-side">
+            <span class="request-status"><i></i><span data-en="REQUEST CHANNEL · OPEN" data-fa="کانال درخواست · باز">REQUEST CHANNEL · OPEN</span></span>
+            <h3 data-en="Start with a clear brief." data-fa="با یک شرح روشن شروع کنیم.">Start with a clear brief.</h3>
+            <p data-en="You do not need a perfect plan. Explain the situation, the outcome you need, and where you are currently blocked." data-fa="نیازی به برنامه‌ای کامل ندارید. وضعیت، نتیجه موردنظر و جایی را که اکنون در آن متوقف شده‌اید توضیح دهید.">You do not need a perfect plan. Explain the situation, the outcome you need, and where you are currently blocked.</p>
+            <ol>
+              <li><span>01</span><b data-en="Submit the brief" data-fa="ثبت شرح درخواست">Submit the brief</b></li>
+              <li><span>02</span><b data-en="Fit and capacity review" data-fa="بررسی تناسب و ظرفیت">Fit and capacity review</b></li>
+              <li><span>03</span><b data-en="Scope, timeline, and fee" data-fa="محدوده، زمان‌بندی و هزینه">Scope, timeline, and fee</b></li>
+            </ol>
+          </div>
+
+          <form class="request-form" data-request-form action="https://formspree.io/f/xzdnpvgw" method="POST">
+            <input class="honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="form-grid">
+              <label class="field"><span data-en="Your name" data-fa="نام شما">Your name</span><input type="text" name="name" autocomplete="name" required></label>
+              <label class="field"><span data-en="Your email" data-fa="ایمیل شما">Your email</span><input type="email" name="email" autocomplete="email" required></label>
+              <label class="field full"><span data-en="Type of request" data-fa="نوع درخواست">Type of request</span>
+                <select name="type" data-request-select required>
+                  <option value="Strategic Session" data-en="Strategic Session" data-fa="جلسه راهبردی">Strategic Session</option>
+                  <option value="Project Architecture" data-en="Project Architecture" data-fa="معماری پروژه">Project Architecture</option>
+                  <option value="Research & Collaboration" data-en="Research & Collaboration" data-fa="پژوهش و همکاری">Research & Collaboration</option>
+                  <option value="Something Else" data-en="Something Else" data-fa="درخواست دیگر">Something Else</option>
+                </select>
+              </label>
+              <label class="field full"><span data-en="What are you trying to solve?" data-fa="می‌خواهید چه مسئله‌ای را حل کنید؟">What are you trying to solve?</span><textarea name="problem" rows="4" required data-placeholder-en="Describe the situation, context, and current obstacle." data-placeholder-fa="وضعیت، زمینه و مانع فعلی را توضیح دهید." placeholder="Describe the situation, context, and current obstacle."></textarea></label>
+              <label class="field full"><span data-en="What outcome would make this successful?" data-fa="چه نتیجه‌ای این همکاری را موفق می‌کند؟">What outcome would make this successful?</span><textarea name="outcome" rows="3" required data-placeholder-en="What should be clearer, built, decided, or changed?" data-placeholder-fa="در پایان چه چیزی باید روشن، ساخته، تصمیم‌گیری یا تغییر داده شده باشد؟" placeholder="What should be clearer, built, decided, or changed?"></textarea></label>
+              <label class="field"><span data-en="Preferred timeline" data-fa="زمان موردنظر">Preferred timeline</span>
+                <select name="timeline">
+                  <option value="Flexible" data-en="Flexible" data-fa="انعطاف‌پذیر">Flexible</option>
+                  <option value="Within 2 weeks" data-en="Within 2 weeks" data-fa="تا دو هفته آینده">Within 2 weeks</option>
+                  <option value="Within 1 month" data-en="Within 1 month" data-fa="تا یک ماه آینده">Within 1 month</option>
+                  <option value="1–3 months" data-en="1–3 months" data-fa="یک تا سه ماه">1–3 months</option>
+                </select>
+              </label>
+              <label class="field"><span data-en="Indicative budget" data-fa="بودجه تقریبی">Indicative budget</span>
+                <select name="budget">
+                  <option value="Need help defining scope" data-en="Need help defining scope" data-fa="برای تعیین محدوده نیاز به راهنمایی دارم">Need help defining scope</option>
+                  <option value="Strategic session only" data-en="Strategic session only" data-fa="فقط جلسه راهبردی">Strategic session only</option>
+                  <option value="Under USD 1,000" data-en="Under USD 1,000" data-fa="کمتر از ۱٬۰۰۰ دلار">Under USD 1,000</option>
+                  <option value="USD 1,000–5,000" data-en="USD 1,000–5,000" data-fa="۱٬۰۰۰ تا ۵٬۰۰۰ دلار">USD 1,000–5,000</option>
+                  <option value="USD 5,000+" data-en="USD 5,000+" data-fa="بیش از ۵٬۰۰۰ دلار">USD 5,000+</option>
+                </select>
+              </label>
+              <label class="field full"><span data-en="Relevant link (optional)" data-fa="لینک مرتبط (اختیاری)">Relevant link (optional)</span><input type="url" name="link" inputmode="url" placeholder="https://"></label>
+            </div>
+            <div class="form-submit">
+              <p data-en="Your request will be securely recorded and Amir will be notified by email. Every request is reviewed for fit, capacity, and the possibility of creating meaningful value." data-fa="درخواست شما به‌صورت امن ثبت می‌شود و امیر از طریق ایمیل مطلع خواهد شد. هر درخواست از نظر تناسب، ظرفیت و امکان ایجاد ارزش واقعی بررسی می‌شود.">Your request will be securely recorded and Amir will be notified by email. Every request is reviewed for fit, capacity, and the possibility of creating meaningful value.</p>
+              <button class="submit-request" type="submit" data-submit-request><span data-en="Submit my request" data-fa="ثبت درخواست">Submit my request</span><i>↗</i></button>
+            </div>
+            <div class="request-result" data-request-result hidden>
+              <div class="result-message"><b data-en="Request received." data-fa="درخواست دریافت شد.">Request received.</b><span data-en="Amir has been notified by email. You can also continue this conversation directly in Telegram or WhatsApp." data-fa="امیر از طریق ایمیل مطلع شد. همچنین می‌توانید همین گفت‌وگو را مستقیماً در تلگرام یا واتس‌اپ ادامه دهید.">Amir has been notified by email. You can also continue this conversation directly in Telegram or WhatsApp.</span></div>
+              <div class="result-actions">
+                <a href="https://t.me/go2fragment" target="_blank" rel="noreferrer" data-request-telegram><span>Telegram</span><i>↗</i></a>
+                <a href="https://wa.me/989392616116" target="_blank" rel="noreferrer" data-request-whatsapp><span>WhatsApp</span><i>↗</i></a>
+                <a href="mailto:starship.amir@gmail.com" data-request-email><span>Gmail</span><i>↗</i></a>
+                <button type="button" data-request-copy><span data-en="Copy request" data-fa="کپی درخواست">Copy request</span></button>
+              </div>
+            </div>
+            <div class="request-error" data-request-error hidden><b data-en="The request could not be recorded." data-fa="درخواست ثبت نشد.">The request could not be recorded.</b><span data-en="Please try again, or continue directly through Telegram, WhatsApp, or email." data-fa="لطفاً دوباره تلاش کنید یا مستقیماً از طریق تلگرام، واتس‌اپ یا ایمیل ادامه دهید.">Please try again, or continue directly through Telegram, WhatsApp, or email.</span><div class="result-actions"><a href="https://t.me/go2fragment" target="_blank" rel="noreferrer" data-request-telegram>Telegram ↗</a><a href="https://wa.me/989392616116" target="_blank" rel="noreferrer" data-request-whatsapp>WhatsApp ↗</a><a href="mailto:starship.amir@gmail.com" data-request-email>Gmail ↗</a></div></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact chapter" id="contact" data-section="contact">
+      <div class="contact-glow" aria-hidden="true"></div>
+      <div class="wrap contact-wrap">
+        <p class="chapter-tag reveal"><span>06</span><span data-en="STAY CONNECTED" data-fa="در ارتباط بمانیم">STAY CONNECTED</span></p>
+        <div class="contact-title reveal">
+          <h2 data-en="Follow the work. Continue the conversation." data-fa="مسیر را دنبال کنید؛ گفت‌وگو را ادامه دهید.">Follow the work. Continue the conversation.</h2>
+          <a class="contact-orbit" href="#work">
+            <span data-en="START A REQUEST" data-fa="ثبت درخواست">START A REQUEST</span>
+            <i>↗</i>
+          </a>
+        </div>
+
+        <div class="social-grid reveal">
+          <a href="https://github.com/axamir" target="_blank" rel="noreferrer"><span>GitHub</span><small>@axamir</small><i>↗</i></a>
+          <a href="https://www.linkedin.com/in/amir-ahmadi-a6a37523a/" target="_blank" rel="noreferrer"><span>LinkedIn</span><small>Amir Ahmadi</small><i>↗</i></a>
+          <a href="https://www.instagram.com/starship.amir/" target="_blank" rel="noreferrer"><span>Instagram</span><small>@starship.amir</small><i>↗</i></a>
+          <a href="https://x.com/AmirStarship" target="_blank" rel="noreferrer"><span>X / Twitter</span><small>@AmirStarship</small><i>↗</i></a>
+          <a href="https://open.substack.com/pub/livingsignal" target="_blank" rel="noreferrer"><span>Substack</span><small>Living Signal</small><i>↗</i></a>
+          <a href="https://t.me/go2fragment" target="_blank" rel="noreferrer"><span>Telegram</span><small>@go2fragment</small><i>↗</i></a>
+          <a href="https://wa.me/989392616116" target="_blank" rel="noreferrer"><span>WhatsApp</span><small>@starship.amir</small><i>↗</i></a>
+          <a href="mailto:starship.amir@gmail.com"><span>Email</span><small>starship.amir@gmail.com</small><i>↗</i></a>
+        </div>
+
+        <footer class="site-footer">
+          <div class="footer-brand"><span class="brand-mark">A<span>/</span>A</span><p data-en="Built as a public doorway into an evolving body of work." data-fa="درگاهی عمومی به مجموعه‌ای از آثار درحال‌تکامل.">Built as a public doorway into an evolving body of work.</p></div>
+          <div class="footer-meta"><span>© <b data-year>2026</b> AMIR AHMADI</span><span>BAKU · WORKING GLOBALLY</span><a href="#home" data-en="BACK TO SIGNAL ↑" data-fa="بازگشت به سیگنال ↑">BACK TO SIGNAL ↑</a></div>
+        </footer>
+      </div>
+    </section>
   </main>
+
+  <noscript><div class="noscript">This site works without JavaScript, but its cinematic motion and language controls require it.</div></noscript>
+  <script src="script.js"></script>
 </body>
 </html>
