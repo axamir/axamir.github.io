@@ -27,12 +27,15 @@
     document.title = next === 'fa'
       ? 'امیر احمدی — سیستم‌های انسان و هوش مصنوعی و آرشیوهای قابل‌راستی‌آزمایی'
       : 'Amir Ahmadi — Human–AI Systems & Verifiable Archives';
-    try { localStorage.setItem('axamir-language', next); } catch (_) {}
+    const url = new URL(window.location.href);
+    if (next === 'fa') url.searchParams.set('lang', 'fa');
+    else url.searchParams.delete('lang');
+    history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
   }
 
-  let storedLanguage = null;
-  try { storedLanguage = localStorage.getItem('axamir-language'); } catch (_) {}
-  const initialLanguage = storedLanguage || (navigator.language?.toLowerCase().startsWith('fa') ? 'fa' : 'en');
+  // The canonical home route always opens in English. Persian is an explicit,
+  // shareable interpretation route selected with ?lang=fa.
+  const initialLanguage = new URLSearchParams(window.location.search).get('lang') === 'fa' ? 'fa' : 'en';
   setLanguage(initialLanguage);
   languageToggle?.addEventListener('click', () => setLanguage(root.lang === 'fa' ? 'en' : 'fa'));
 
