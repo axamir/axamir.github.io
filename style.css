@@ -420,6 +420,10 @@ html[dir="rtl"] .metric span { text-transform: none; letter-spacing: 0; }
 .publication-row div { min-width: 0; }
 .publication-row small { color: var(--blue-soft); font: 8px ui-monospace, monospace; letter-spacing: .15em; }
 .publication-row h3 { margin: 8px 0 0; overflow: hidden; text-overflow: ellipsis; font: 400 clamp(19px, 2.4vw, 32px)/1.2 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: -.035em; white-space: nowrap; }
+.publication-row--latest { min-height: 146px; background: linear-gradient(90deg, rgba(95,140,255,.10), transparent 65%); border-left: 2px solid var(--blue-soft); padding-inline: 16px; }
+.publication-row--latest:hover { padding-inline: 28px; background: linear-gradient(90deg, rgba(95,140,255,.17), transparent 68%); }
+.publication-row--latest h3 { color: var(--text); white-space: normal; }
+.publication-row--latest p { max-width: 660px; margin: 7px 0 0; color: var(--quiet); font-size: 11px; line-height: 1.6; }
 .pub-type { padding: 5px 9px; border: 1px solid var(--line); border-radius: 16px; color: var(--quiet); font: 7px ui-monospace, monospace; }
 .publication-row > i { color: var(--quiet); font-style: normal; transition: .3s; }
 .publication-row:hover > i { color: var(--text); transform: translate(3px,-3px); }
@@ -648,6 +652,8 @@ html[dir="rtl"] .social-grid a, html[dir="rtl"] .social-grid button { text-align
   .publication-row { grid-template-columns: 34px 1fr 20px; gap: 12px; min-height: 100px; }
   .pub-type { display: none; }
   .publication-row h3 { font-size: 15px; }
+  .publication-row--latest { min-height: 130px; padding-inline: 10px; }
+  .publication-row--latest p { font-size: 10px; }
   .publication-footer { grid-template-columns: 1fr; }
   .publication-footer a { align-items: flex-start; flex-direction: column; gap: 7px; }
   .publication-footer a + a { border-left: 0; border-top: 1px solid var(--line); }
